@@ -1,6 +1,6 @@
 <?php
 
-namespace Application\Controllers\QuizController;
+namespace Application\Controllers;
 
 //require_once('src/lib/database.php');
 
@@ -15,12 +15,17 @@ class QuizController
         // $postRepository = new PostRepository();
         // $postRepository->connection = $connection;
         // $post = $postRepository->getPost($identifier);
-        if($connection != null)
-            var_dump($connection);
+    
         // $commentRepository = new CommentRepository();
         // $commentRepository->connection = $connection;
         // $comments = $commentRepository->getComments($identifier);
-
-        require('src/views/quiz.php');
+      
+        // Output your text content
+        echo 'Welcome to the homepage! ' . $identifier . "\n";
+        echo "Le super blog de l'AVBN !\n";
+        echo "Derniers billets du blog :\n";
+    
+        // Load and include the HTML view file without interpreting its HTML tags
+        require('templates/quiz.php');
     }
 }

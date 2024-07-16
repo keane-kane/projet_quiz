@@ -1,5 +1,6 @@
 <?php
-namespace Application\Lib\Router;
+
+namespace Application\Lib;
 
 class Router {
     private $routes = [];

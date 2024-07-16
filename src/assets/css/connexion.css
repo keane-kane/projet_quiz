@@ -1,0 +1,149 @@
+
+ *{ 
+    box-sizing: border-box;
+    position: relative;
+}
+ body{   
+    margin: 0 ;
+    padding: 0em !important;
+    background: url("../images/fond.jpg") no-repeat center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 0vh;
+ }
+
+.plaisir{
+    background: #0B5973;
+    border: 1px solid #758651;
+    top: 0em;
+    z-index: 6666;
+}
+.imageH{
+    background-image: url("../images/logo-QuizzSA.png");
+    height: 2.8em;
+    width: 10%;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: absolute;
+    left: 10px;
+    top: -3px;
+}
+.jouer{
+    text-align: center;
+    color: #FFFFFF;
+   line-height: 1.2em;
+   font-size: 2em;
+}
+.f{
+    background: #0B5973;
+    border: 1px solid #758651;
+    text-align: center;
+    color: #fff; 
+    top :5.8vh;
+    z-index: 6666;
+}
+.div-form-con{
+    position: relative;
+    background-color: #F9FAFB;
+    margin:auto;
+    width:22em;
+    height: 28em;
+    top:-.5em;
+
+}
+.login{
+    position: relative;
+    font-family: Sans-serif;
+    font-weight: bold;
+    font-size: 01.5em; 
+    color: #58BDE9;
+    text-align: center;
+    top:1em;
+   
+}
+form{
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 1em;
+}
+.div1 {
+    margin: 4em 0 0em;
+}
+.div2 {
+    margin: 2em 0 0em;
+}
+.div2 input,.div1 input{
+height: 2.5em;
+text-indent: 15px;
+letter-spacing: 1px;
+background: #E5E5E5;
+margin: auto;
+box-shadow: inset 0 .4em .4em rgba(0, 0, 0, 0.25);
+}
+.checkbox input{
+    height: 2em;
+    width:1.5em;
+    margin: 1.5em 0 0 1em;
+    border: 2px solid #0B5973;
+    box-sizing: border-box;
+
+ } 
+.checkbox span{
+    position: absolute;
+    margin: 1.8em  .5em !important ;
+    color: #000;
+    font-family: sans-serif;
+}
+
+div .btn{  
+    height: 1.5em;
+    letter-spacing: 1px;
+    line-height: 0em;
+    font-size:1.5em;
+    margin : 1.5em 0 0 0em;
+    color:  #fbffff; 
+    background: #58BDE9;
+    box-shadow: 0 .1em .3em rgba(0, 0, 0, 0.25);
+}
+.inscrire {
+    background: #fff;
+    box-shadow: 0 .4em .4em rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin-left :0em;
+    height: 2.5em;
+    margin-top: 1em;
+}
+.inscrire,.btn,.div2 input, .div1 input{
+   border-radius: 50px;
+   width:100%;
+}
+.inscrire a{
+    color:rgb(26, 29, 236);;
+    text-decoration: none;
+    line-height: 3em;
+}
+.inscrire a:hover{
+    color:rgb(245, 11, 11);
+    text-decoration: underline;
+}
+
+.erreur{
+    position: absolute;
+    margin: 0em  1em -3em 1em;
+    color: red;
+    font-size: 12px;
+    float: right !important;
+    right: 0;
+}
+#error{
+    position: relative;
+    top: 1.8em;
+    margin-bottom: -3em;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    background-color:  red;
+    
+}
