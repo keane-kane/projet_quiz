@@ -1,0 +1,135 @@
+
+La pièce jointe CV_Abdou_Aziz_Kane .pdf a été ajoutée.Conversation ouverte. 1 message lu. 
+
+Aller au contenu
+Utiliser Gmail avec un lecteur d'écran
+1 sur 696
+Test Technique | GO
+Boîte de réception
+
+Mehdi JOYEN
+13:59 (il y a 13 minutes)
+À moi
+
+Objectif du Test
+Votre tâche est de développer une fonctionnalité permettant d'envoyer des quiz à des personnes spécifiques (attendees) et de suivre lorsque le formulaire est rempli.
+Informations Fournies
+Tables concernées :
+redof_quiz_master
+CREATE TABLE `redof_quiz_master` (
+  `quiz_id` int NOT NULL AUTO_INCREMENT,
+  `company_id` int NOT NULL,
+  `title` varchar(555) NOT NULL,
+  `type` varchar(111) NOT NULL,
+  `version` varchar(333) NOT NULL,
+  `details` varchar(255) NOT NULL,
+  `random_questions` int NOT NULL DEFAULT 0,
+  `random_answers` int NOT NULL DEFAULT 0,
+  `status` int NOT NULL,
+  `is_delete` int NOT NULL,
+  `created_by` int NOT NULL,
+  `updated_by` int NOT NULL,
+  `ip_address` varchar(22) NOT NULL,
+  `created_date` datetime NOT NULL,
+  `updated_date` datetime NOT NULL,
+  PRIMARY KEY (`quiz_id`)
+);
+redof_quiz_questions
+CREATE TABLE `redof_quiz_questions` (
+  `question_id` int NOT NULL AUTO_INCREMENT,
+  `quiz_id` int NOT NULL,
+  `question_type` varchar(60) NOT NULL,
+  `question_title` varchar(255) NOT NULL,
+  `correct_answers` varchar(255) NOT NULL,
+  `answer_1` varchar(255) NOT NULL,
+  `answer_2` varchar(255) NOT NULL,
+  `answer_3` varchar(255) NOT NULL,
+  `answer_4` varchar(255) NOT NULL,
+  `sequence` int NOT NULL,
+  PRIMARY KEY (`question_id`)
+);
+redof_attendees_master
+CREATE TABLE `redof_attendees_master` (
+  `attendee_id` int NOT NULL AUTO_INCREMENT,
+  `unique_id` varchar(22) NOT NULL,
+  `company_id` int NOT NULL,
+  `gender` varchar(55) NOT NULL,
+  `first_name` varchar(55) NOT NULL,
+  `last_name` varchar(55) NOT NULL,
+  `phone` varchar(22) NOT NULL,
+  `email` varchar(555) NOT NULL,
+  `dob` varchar(55) NOT NULL,
+  `birth_country` varchar(111) NOT NULL,
+  `birth_city` varchar(111) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `is_situation_disable` int NOT NULL,
+  `disable_mor_info` longtext NOT NULL,
+  `expectation` longtext NOT NULL,
+  `condition_success` longtext NOT NULL,
+  `individual` varchar(255) NOT NULL,
+  `company_client_id` int NOT NULL DEFAULT 0,
+  `status` int NOT NULL,
+  `is_delete` int NOT NULL,
+  `created_by` int NOT NULL,
+  `updated_by` int NOT NULL,
+  `ip_address` varchar(111) NOT NULL,
+  `created_date` datetime NOT NULL,
+  `updated_date` datetime NOT NULL,
+  PRIMARY KEY (`attendee_id`)
+);
+Consignes pour le Développement du Système de Quiz avec Tracking
+Création et Envoi de Quiz
+Permettre la création de quiz avec des questions.
+Générer un lien unique pour chaque quiz envoyé à un attendee spécifique.
+Envoyer le lien unique par email à l'attendee en utilisant une fonction globale pré-existante.
+
+Tracking et Collecte des Réponses
+Associer chaque lien de quiz à l'attendee spécifique.
+Lorsqu'un attendee remplit le quiz, enregistrer les réponses dans une table avec l'ID de l'attendee.
+Marquer le quiz comme rempli pour cet attendee.
+
+Soumission du Travail
+Instructions pour l'Upload
+Fichier Compressé : Compressez votre projet (zip, tar.gz, etc.) avant de le soumettre.
+Accès à la Page d'Upload : Accédez à la page Test pour soumettre votre travail.
+Formulaire d'Upload : Remplissez le formulaire avec le nom du fichier et sélectionnez le fichier compressé à uploader.
+Informations de Connexion
+Pour accéder à la page de soumission, utilisez les identifiants suivants :
+Email : abdouazizk50@gmail.com
+Mot de Passe : abdouazizk50@gmail.com
+N'oubliez pas de cliquer sur le bouton "J'ai terminé le test" pour enregistrer votre candidature technique.
+Exigences Techniques
+Fonctionnalité : La fonctionnalité doit permettre l'envoi de quiz avec tracking des réponses.
+Code : Le code doit être propre, bien structuré et suivre les meilleures pratiques.
+Validation : Les données doivent être correctement validées avant l'envoi des emails et l'enregistrement des réponses.
+Sécurité : Les envois d'emails doivent être sécurisés et protéger les données sensibles. Les liens de quiz doivent être sécurisés.
+Gestion des Erreurs : Les erreurs doivent être gérées de manière appropriée et les messages d'erreur doivent être clairs.
+Documentation : Le code doit être correctement documenté.
+Évaluation
+Les critères suivants seront utilisés pour évaluer l'exercice :
+Fonctionnalité : La fonctionnalité permet correctement l'envoi de quiz avec tracking des réponses.
+Qualité du Code : Le code est propre, bien structuré et suit les meilleures pratiques.
+Validation des Données : Les données sont correctement validées avant l'envoi des emails et l'enregistrement des réponses.
+Sécurité : Les envois d'emails sont sécurisés et protègent les données sensibles. Les liens de quiz sont sécurisés.
+Gestion des Erreurs : Les erreurs sont gérées de manière appropriée et les messages d'erreur sont clairs.
+Documentation : Le code est correctement documenté.
+Nous vous souhaitons bonne chance et attendons avec impatience de découvrir votre travail.
+
+
+Cordialement - Best Regards
+
+Logo RED LIFE
+Mehdi   JOYEN
+Founder - Fondateur
+
+RED LIFE FRANCE
+
+	+33 (0)1.88.61.03.78
+	mjoyen@redlife.fr
+	www.redlife.academy
+linkedin	
+
+Bien reçu !Bien reçu.Test réussi !
+Nouveau message :
+Nouveau message
+RéduireFenêtre externeFermer
